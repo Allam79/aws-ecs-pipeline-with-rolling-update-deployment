@@ -12,14 +12,14 @@ const express = require('express');
 const PORT = 8080;
 const HOST = '0.0.0.0';
 const OS = require('os');
-const ENV = 'QA';
+const ENV = 'DEV';
 
 
 // App
 const app = express();
 app.get('/', (req, res) => {
   res.statusCode = 200;
-  const msg = 'Hello from CodePipeline!';
+  const msg = 'Hello from Node!';
   res.send(getPage(msg));
 });
 
